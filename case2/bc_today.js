@@ -1,4 +1,4 @@
-
+"use strict";
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
@@ -14,7 +14,7 @@
 
 */
 
-
+var thisDate = new Date("October 12,2018");
 
 function getEvent(day) {
    var eventHTML;
