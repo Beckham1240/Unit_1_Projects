@@ -1,3 +1,4 @@
+"use strict";
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
@@ -12,6 +13,20 @@
    quotation tag in the Web page.
 
 */
+// sets the value of randomQ as the random integer of randomInt
+var randomQ = randomInt(0,9);
+
+//finds the quote tag and chooses the quote 
+var quoteElem = document.getElementsByTagName("quote")[0];
+
+//inputs the random quote in the quote tag
+quoteElem.innerHTML = getQuote(randomQ);
+
+//generates a random integer 
+function randomInt(lowest, size){
+   var randy = Math.floor(Math.random() * size + lowest);
+   return randy;
+}
 
 
 function getQuote(n) {
