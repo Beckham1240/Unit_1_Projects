@@ -13,8 +13,21 @@
    student union.
 
 */
-
+// sets thisDate as a new date value and dateString makes it into a number date
 var thisDate = new Date("October 12,2018");
+var dateString = thisDate.toLocaleDateString();
+
+//puts the date in the h2 heading
+var dateHTML = "<h2>" + dateString + "</h2>";
+
+//gets the day number from thisDate
+var thisDay = thisDate.getDay();
+
+//runs the getEvent function with the value of thisDay
+var eventHTML = getEvent(thisDay);
+
+//puts the date before the stuff in the getEvent function in the HTML
+document.getElementById("unionToday").insertAdjacentHTML('beforeEnd', dateHTML + eventHTML);
 
 function getEvent(day) {
    var eventHTML;

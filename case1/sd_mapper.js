@@ -15,7 +15,7 @@ var timeStr = thisTime.toLocaleString();
 
 document.getElementById("timeStamp").innerHTML = timeStr;
 
-var thisHour = thisTime.getHours()
+var thisHour = thisTime.getHours();
 var thisMonth = thisTime.getMonth();
 
 var mapNum = (2*thisMonth + thisHour)% 24;
